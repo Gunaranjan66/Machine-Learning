@@ -14,8 +14,8 @@ def der(x,y,w,b,alpha):
     return w,b
 if __name__=='__main__':
     data=pd.read_csv("ex1data1.csv")
-    x=np.array(data['6.1101']);
-    y=np.array(data['17.592'])
+    x=np.array(data['rooms']);
+    y=np.array(data['rate'])
     w=np.random.randn(1)*10
     b=np.random.rand(1)*10
     print("Initial cost :",cost(x,forward(x,w,b)))
