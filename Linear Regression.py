@@ -16,8 +16,8 @@ if __name__=='__main__':
     data=pd.read_csv("ex1data1.csv")
     x=np.array(data['rooms']);
     y=np.array(data['rate'])
-    w=np.random.randn(1)
-    b=np.random.rand(1)
+    w=0
+    b=0
     print("Initial cost :",cost(x,forward(x,w,b)))
     for i in range(100):
         w,b=der(x,y,w,b,0.001)
